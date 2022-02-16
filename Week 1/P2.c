@@ -8,7 +8,7 @@ int main()
 	int y = 0;
 	pid_t pid;
 	pid = fork();
-	if(pid>0)
+	if(pid>0) //Parent process
 	{
 		for(i=0;i<5;i++)
 		{
@@ -17,7 +17,7 @@ int main()
 		}
 		printf("Parent - y: %d  pid: %d  ppid: %d\n", y, getpid(), getppid());
 	}
-	if(pid==0)
+	if(pid==0) //Child Process
 	{
 		for(i=0;i<5;i++)
 		{
