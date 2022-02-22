@@ -12,12 +12,12 @@ int main()
 		fprintf(stderr, "Fork Failed");
 		return 1;
 	}
-	else if(pid==0)
+	else if(pid==0) //Child Process
 	{
 		y++;
 		printf("Child - y: %d  pid: %d  ppid: %d\n", y, getpid(), getppid());
 	}
-	else
+	else //Parent process
 	{
 		y--;
 		wait(NULL);
