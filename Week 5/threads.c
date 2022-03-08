@@ -44,9 +44,9 @@ int main(int argc, char *argv[])
 /* The thread will begin control in this function */
 void *runner(void *param)
 {
-	int i, upper = atoi(param);
-	sum = upper;
-	product = upper;
+	int i, a = atoi(param);
+	sum = a;
+	product = a;
 
 	pthread_exit(0);
 }
