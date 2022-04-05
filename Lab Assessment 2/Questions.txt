@@ -1,0 +1,10 @@
+1) Implement pipe operator with following functionality: 
+    The parent process reads in a file "input.txt" and redirects the output to pipe
+    The child process reads the contents and performs a line count, space and characters
+
+2)Using pipes, find the sum of an array
+    One process reads half the array and stores in pipe
+    The second process reads the other half and displays the whole array as output
+
+3)  One process takes 3 strings as input and writes into pipe
+    The other process reads from pipe and change the order of string to display
