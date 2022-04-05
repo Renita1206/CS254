@@ -25,10 +25,11 @@ int main()
     printf("content of this file are \n");
  
     int i=0;
+    char ch="";
 
     do 
     {
-        char ch = fgetc(ptr);
+        ch = fgetc(ptr);
         buff[i] = ch;
         i++;
     } while (ch != EOF);
@@ -51,3 +52,6 @@ int main()
     sleep(100);
     return 0; 
 } 
+
+
+
